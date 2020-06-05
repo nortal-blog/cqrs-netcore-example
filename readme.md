@@ -1,3 +1,9 @@
+# CQRS Example # 
+
+This sample demonstrates CQRS style architecture with .NET Core 3.1 and excellent [MediatR](https://github.com/jbogard/MediatR) library. 
+
+The code was prepared for Nortal's internal techie showcase on 5.6.2020. 
+
 # Instructions # 
 
 ## Run in a Docker container
@@ -28,8 +34,6 @@ dotnet run
 # OPEN https://localhost:5001/swagger/index.html in your browser
 
 ```
-
-# CQRS Example # 
 
 ## Background 
 
