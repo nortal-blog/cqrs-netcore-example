@@ -21,9 +21,9 @@ Building and running in dotnet requires NET Core 3.1 SDK that can be downloaded 
 
 
 ```bash
-cd ./src/cqrs-netcore-example
+cd src/cqrs-netcore-example
 
-./dotnet run
+dotnet run
 
 # OPEN https://localhost:5001/swagger/index.html in your browser
 
