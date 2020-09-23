@@ -19,10 +19,7 @@ jobs:
         dotnet-version: 3.1.301
     - name: Install dependencies
       run: | 
-        pwd
-        ls -la
         dotnet restore ./src
     - name: Build
       run: |
-        ls -la
         dotnet build ./src --configuration Release --no-restore 
