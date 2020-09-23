@@ -23,7 +23,10 @@ jobs:
         docker build -t cqrs-netcore-example:latest .
     - name: Docker tag 
       run: |
-        docker tag cqrs-netcore-example:latest docker.pkg.github.com/nortal-blog/cqrs-netcore-example/cqrs-netcore-example:latest
+        docker tag cqrs-netcore-example:latest ghcr.io/nortal-blog/cqrs-netcore-example:latest
     - name: Docker Publish
+      env:
+       GHCR_TOKEN: ${{secrets.GHCR_TOKEN}}
       run: |
-        # docker push docker.pkg.github.com/nortal-blog/cqrs-netcore-example/cqrs-netcore-example:latest
+        # echo $GHCR_TOKEN | docker login ghcr.io -u apehkone --password-stdin
+        # docker push ghcr.io/nortal-blog/cqrs-netcore-example:latest
