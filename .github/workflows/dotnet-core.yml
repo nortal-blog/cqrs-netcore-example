@@ -21,4 +21,9 @@ jobs:
       run: | 
         cd src
         docker build -t cqrs-netcore-example:latest .
-    
+    - name: Docker tag 
+      run: |
+        docker tag cqrs-netcore-example:latest docker.pkg.github.com/nortal-blog/cqrs-netcore-example/cqrs-netcore-example:latest
+    - name: Docker Publish
+      run: |
+        # docker push docker.pkg.github.com/nortal-blog/cqrs-netcore-example/cqrs-netcore-example:latest
